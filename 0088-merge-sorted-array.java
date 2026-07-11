@@ -5,13 +5,13 @@ class Solution {
 
         while(p1 >=0 && p2 >=0){
             if(nums2[p2] > nums1[p1]){
-                nums1[p3--] = nums2[p2--];
+                nums1[p3--] = nums2[p2--]; // apna chutiya dimaag jyada mat lagana
             }
             else{
                 nums1[p3--] = nums1[p1--];
             }
         } 
-        while(p2 >= 0){
+        while(p2 >= 0){ // iske liye gandu tu alag se kar raha tha , yaad rakhiyo
             nums1[p3--] = nums2[p2--];
         }
     }
